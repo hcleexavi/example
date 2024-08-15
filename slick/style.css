@@ -1,0 +1,103 @@
+body {
+  margin:0;
+  height: 2000px;
+  background:#aaf;
+}
+div.main {
+  width:100%;
+}
+div.single-item  {
+	width:100%;  
+  margin:0 auto;
+
+}
+div.single-item div.item {
+	position:relative;
+	width:100%;
+	height:656px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size:cover;
+
+	text-align:center;
+}
+
+div.single-item div.item1 {
+  background-image: url(/html/_skin/seil/images/main/main_visual01.jpg);
+}
+
+div.single-item div.item2 {
+  background-image: url(/html/_skin/seil/images/main/main_visual02.jpg);
+}
+
+div.single-item div.item3 {
+  background-image: url(/html/_skin/seil/images/main/main_visual03.jpg);
+}
+
+div.single-item div.item div.text {
+	position:absolute;
+	width:1080px;
+	top:100px;
+	left:50%;
+	margin-left:-540px;
+	
+}
+div.single-item div.item div.text > div {
+  position:relative;
+	width:1080px;
+}
+
+div.single-item div.item h1, div.single-item div.item h3 {
+  position: absolute;
+	z-index:111; font-weight:900; font-size:48px; line-height:1.4; color:#fff; 
+	word-break:keep-all; letter-spacing:0; 
+	text-shadow:7px 0 7px rgba(0,0,0,.17);
+}
+div.single-item div.item h2 {
+    position:relative;z-index:111; display:inline-block;font-weight:900; font-size:34px; line-height:1.4; 
+    color:#fff; word-break:keep-all; letter-spacing:0; text-shadow:7px 0 7px rgba(0,0,0,.17);
+}
+div.single-item div.item h2:before {
+    content:''; position:absolute; top:50%; right:100%; margin-right: 12px;; width:353px; height:1px; background: #efecea;
+}
+div.single-item div.item h2:after {
+  content:''; position:absolute; top:50%; left:100%; margin-left: 12px;; width:353px; height:1px; background: #efecea;
+}
+
+div.single-item div.item p {z-index:111; font-weight:700; font-size:24px; line-height:1.4; color:#fff; word-break:keep-all; letter-spacing:-1px;margin-top: 40px;}
+.main-visual .slick_txt * {position:relative; /* transition:font-size 0.5s ; */ opacity:0;}
+
+
+div.single-item div.item h1 {
+	top:-100px;
+}
+
+
+div.single-item div.item h1 {
+	xxanimation:slide 10s ease-out;
+}
+
+@keyframes slide {
+  0% { /* from */
+    top:-100px;
+    opacity:0;
+  }
+  100% { /* to */
+    top:100px;
+    opacity: 1;
+  }
+}
+
+@keyframes disapear {
+  0% { /* from */
+    left:400px;
+    opacity:1;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% { /* to */
+    left:-100px;
+    opacity: 0;
+  }
+}

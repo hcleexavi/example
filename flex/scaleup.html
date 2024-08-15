@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scale Animation</title>
+<style type="text/css">
+ul.flex {display:flex;margin:0;list-style:none}
+
+.image-container {
+    width: 1500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.flex > li:nth-child(1) img.image {animation: scaleUp 1s forwards ;}
+ul.flex > li:nth-child(2) img.image {animation: scaleUp 1s forwards .5s;}
+ul.flex > li:nth-child(3) img.image {animation: scaleUp 1s forwards 1.5s;}
+ul.flex > li:nth-child(4) img.image {animation: scaleUp 1s forwards 2s;}
+
+.image {
+    transform:scale(0.9);
+    xxanimation: scaleUp 3s forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-width: 767.99px) {
+    .image-container {width: 100%;}
+    ul.flex {flex-direction: column;}
+}
+</style>
+
+</head>
+<body>
+    <div class="image-container">
+		<ul class="flex">
+			<li><a href="#"><img src="/html/img/main/our_banner01.jpg"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner02.jpg"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner03.jpg"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner04.jpg"></a></li>
+		</ul>
+	</div>
+	<div class="image-container">
+       <ul class="flex">
+			<li><a href="#"><img src="/html/img/main/our_banner01.jpg" class="image"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner02.jpg" class="image"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner03.jpg" class="image"></a></li>
+			<li><a href="#"><img src="/html/img/main/our_banner04.jpg" class="image"></a></li>
+		</ul>
+	</div>
+</body>
+</html>

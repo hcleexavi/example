@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Border Animation</title>
+    <style>
+        .image-container {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+			opacity: .8;
+        }
+
+        .image-container::before,
+        .image-container::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #000;
+            transition: all 0.3s ease;
+        }
+
+        .image-container::before {
+            top: 0;
+            left: 0;
+        }
+
+        .image-container::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        .image-container:hover::before,
+        .image-container:hover::after {
+            width: 100%;
+        }
+
+        .image-container:hover img {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="http://bm.localhost/img/banner/240612/slide_banner3.jpg" alt="Sample Image">
+</div>
+
+</body>
+</html>
