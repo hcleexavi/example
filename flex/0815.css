@@ -22,6 +22,7 @@
   xxborder:1px solid #000;
   
 }
+
 .item:nth-child(odd) {background-color: #0ff;}
 .item:nth-child(even) {background-color: #ff0;}
 
