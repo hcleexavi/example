@@ -26,11 +26,11 @@
 .item:nth-child(even) {background-color: #ff0;}
 
 .item1 {
-  /* order:3; */
-  background-color: #0ff;
+  background-color: #aaf !important;
  
 }
 xx.item1 {
+  order:3;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis:50%; /* auto */
